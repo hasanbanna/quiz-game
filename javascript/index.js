@@ -8,16 +8,17 @@ $(document).ready(function(){
     dataType:'JSON',
     success: function(result){
       var l = result.results.length;
-      for(var i = 0; i < l; i++){
-        $("#quiz-area").append("<p>"+result.results[i].category +"</p>");
-        $("#quiz-area").append("<p>"+result.results[i].question +"</p>");
+        $("#quiz-area").append("<h1>Question 1</h1>");
+        $("#quiz-area").append("<h2>Category -- "+result.results[0].category +"</h2>")
+        $("#quiz-area").append("<h2>"+result.results[0].question +"</h2>");
+        var possible_answers ="<ul>";
         for(var j = 0; j < 3; j++){
-        $("#quiz-area").append("<p>"+result.results[i].incorrect_answers[j] +"</p>");
+        possible_answers+="<li>"+result.results[0].incorrect_answers[j] +"</li>";
         }
-        $("#quiz-area").append("<p>"+result.results[i].correct_answer+"</p>");
-      }
+        possible_answers+="<li>"+result.results[0].correct_answer+"</li>";
+        possible_answers+="</ul>";
+        $("#quiz-area").append(possible_answers);
 
-    //  console.log(result);
     }
   });
 
