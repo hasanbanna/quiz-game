@@ -1,7 +1,9 @@
-# quiz-game
-A quiz game made with love + HTML/CSS/Javascript + love
+# Quiz Game
 
+An quiz app  made with love + HTML/CSS/Javascript + love.
 
-@Maushimo Mohsin Yusuf
+Players compelete quizzes and their mastery is increased per performance in the quiz.
 
-@hasanbanna Hasan Banna
+[@Maushimo](www.github.com/maushimo) Mohsin Yusuf
+
+[@hasanbanna](www.github.com/hasanbanna) Hasan Banna
